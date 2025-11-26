@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Formularios</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="statics/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Proyecto de Formularios y Multimedia</h1>
+        <p>Bienvenido al proyecto. Usa los menús para navegar por las secciones.</p>
+    </header>
+
+    <!-- Mostrar nombre del usuario -->
+    <h2 id="saludo-usuario" class="bienvenida"></h2>
+
+    <main>
+
+        <!-- Botón desplegable 1: Multimedia -->
+        <details class="menu-desplegable">
+            <summary class="btn">Multimedia</summary>
+            <ul>
+                <li><a href="templates/multimedia1.html">Multimedia 1</a></li>
+                <li><a href="templates/multimedia2.html">Multimedia 2</a></li>
+                <li><a href="templates/multimedia3.html">Multimedia 3</a></li>
+            </ul>
+        </details>
+
+        <!-- Botón desplegable 2: Menú -->
+        <details class="menu-desplegable">
+            <summary class="btn">Menús</summary>
+            <ul>
+                <li><a href="templates/menu1.html">Menu 1</a></li>
+                <li><a href="templates/menu2.html">Menu 2</a></li>
+                <li><a href="templates/menu3.html">Menu 3</a></li>
+            </ul>
+        </details>
+
+        <!-- Botón normal: Volver al inicio -->
+        <a href="index.html" class="btn btn-inicio">Inicio</a>
+
+    </main>
+
+    <!-- Footer con tu nombre -->
+    <footer style="text-align:center; margin-top: 40px; padding: 10px; color:#555;">
+        Proyecto desarrollado por Nestor Diosnel Ruiz Rotela
+    </footer>
+
+    <!-- Script de bienvenida -->
+    <script src="js/script_bienvenida.js"></script>
+</body>
+</html>

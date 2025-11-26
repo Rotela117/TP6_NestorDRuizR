@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia 3 - Videos y Audios</title>
+
+    <link rel="stylesheet" href="../statics/styles.css">
+    <style>
+        /* Menú superior */
+        .menu-superior {
+            display: flex;
+            justify-content: center;
+            background: rgba(26, 54, 93, 0.95);
+            padding: 12px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-superior ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-superior ul li {
+            margin: 0 12px;
+        }
+
+        .menu-superior ul li a {
+            text-decoration: none;
+            color: #e3f2fd;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .menu-superior ul li a:hover {
+            background: #1e88e5;
+        }
+
+        /* Imagen junto al título */
+        .titulo-con-imagen {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .titulo-con-imagen img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menú superior con navegación -->
+    <header class="menu-superior">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="multimedia1.html">Multimedia 1</a></li>
+            <li><a href="multimedia2.html">Multimedia 2</a></li>
+            <li><a href="multimedia3.html">Multimedia 3</a></li>
+            <li><a href="menu1.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+            <li><a href="menu3.html">Menu 3</a></li>
+        </ul>
+    </header>
+
+    <main class="contenido">
+        <div class="titulo-con-imagen">
+            <h1>Multimedia Avanzada</h1>
+            <img src="../statics/images/audioyvideo.jpg" alt="Multimedia">
+        </div>
+        <p>Videos MP4 y pistas de audio disponibles para reproducir.</p>
+
+        <!-- Sección de Videos -->
+        <h2 class="titulo-seccion">Videos MP4</h2>
+        <section class="contenedor-videos">
+            <div class="video-card">
+                <h3>Video 1</h3>
+                <video controls width="100%">
+                    <source src="../statics/video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            <div class="video-card">
+                <h3>Video 2</h3>
+                <video controls width="100%">
+                    <source src="../statics/video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+            <div class="video-card">
+                <h3>Video 3</h3>
+                <video controls width="100%">
+                    <source src="../statics/video3.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </section>
+
+        <!-- Sección de Audios -->
+        <h2 class="titulo-seccion">Audios</h2>
+        <section class="contenedor-audios">
+            <div class="audio-card">
+                <h3>Audio 1</h3>
+                <audio controls>
+                    <source src="../statics/audio1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3>Audio 2</h3>
+                <audio controls>
+                    <source src="../statics/audio2.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+            <div class="audio-card">
+                <h3>Audio 3</h3>
+                <audio controls>
+                    <source src="../statics/audio3.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </div>
+        </section>
+
+        <a href="../index.html" class="btn btn-inicio">Volver al Inicio</a>
+    </main>
+
+        <!-- Footer con tu nombre -->
+    <footer style="text-align:center; margin-top: 40px; padding: 10px; color:#555;">
+        Proyecto desarrollado por Nestor Diosnel Ruiz Rotela
+    </footer>
+    
+</body>
+</html>

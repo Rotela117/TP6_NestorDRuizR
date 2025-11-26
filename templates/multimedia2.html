@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia 2 - Videos</title>
+
+    <link rel="stylesheet" href="../statics/styles.css">
+    <style>
+        /* Menú superior */
+        .menu-superior {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(26, 54, 93, 0.95);
+            padding: 12px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu-superior ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-superior ul li {
+            margin: 0 12px;
+        }
+
+        .menu-superior ul li a {
+            text-decoration: none;
+            color: #e3f2fd;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .menu-superior ul li a:hover {
+            background: #1e88e5;
+        }
+
+        /* Imagen junto al título */
+        .titulo-con-imagen {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .titulo-con-imagen img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menú superior con navegación -->
+    <header class="menu-superior">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="multimedia1.html">Multimedia 1</a></li>
+            <li><a href="multimedia2.html">Multimedia 2</a></li>
+            <li><a href="multimedia3.html">Multimedia 3</a></li>
+            <li><a href="menu1.html">Menu 1</a></li>
+            <li><a href="menu2.html">Menu 2</a></li>
+            <li><a href="menu3.html">Menu 3</a></li>
+        </ul>
+    </header>
+
+    <main class="contenido">
+        <div class="titulo-con-imagen">
+            <h1>Videos de YouTube</h1>
+            <img src="../statics/images/video.png" alt="Icono Video">
+        </div>
+        <p>Disfrutá estos videos seleccionados especialmente.</p>
+
+        <section class="contenedor-videos">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <h3>Bohemian Rhapsody | Muppets</h3>
+                <iframe 
+                    width="100%" height="280"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card">
+                <h3>Otoño</h3>
+                <iframe 
+                    width="100%" height="280"
+                    src="https://www.youtube.com/embed/8gJ716dhStg"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-card">
+                <h3>Smash Mouth - All Star</h3>
+                <iframe 
+                    width="100%" height="280"
+                    src="https://www.youtube.com/embed/L_jWHffIx5E"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <a href="../index.html" class="btn btn-inicio">Volver al Inicio</a>
+    </main>
+
+        <!-- Footer con tu nombre -->
+    <footer style="text-align:center; margin-top: 40px; padding: 10px; color:#555;">
+        Proyecto desarrollado por Nestor Diosnel Ruiz Rotela
+    </footer>
+    
+</body>
+</html>

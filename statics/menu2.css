@@ -1,0 +1,29 @@
+.menu-horizontal {
+    background: rgba(26, 54, 93, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.menu-horizontal ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal ul li {
+    margin: 0 15px;
+}
+
+.menu-horizontal ul li a {
+    color: #e3f2fd;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-horizontal ul li a:hover {
+    background: #1e88e5;
+}

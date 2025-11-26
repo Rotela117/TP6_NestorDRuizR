@@ -1,0 +1,258 @@
+/* ----------------------------- */
+/*        ESTILOS GENERALES      */
+/* ----------------------------- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0a2a43, #0f3b63, #15507e);
+    color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+main {
+    margin-top: 30px;
+    padding: 40px;
+}
+
+/* ----------------------------- */
+/*            HEADER             */
+/* ----------------------------- */
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #bbdefb;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #e1f5fe;
+    margin: 0;
+}
+
+/* ----------------------------- */
+/*     SALUDO DEL USUARIO        */
+/* ----------------------------- */
+
+.bienvenida {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ffffff;
+    animation: fadeIn 1.2s ease-in-out both;
+}
+
+/* ----------------------------- */
+/*           BOTONES             */
+/* ----------------------------- */
+
+.btn {
+    background: #1976d2;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 12px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+    background: #2196f3;
+    transform: translateY(-3px);
+}
+
+.btn-inicio {
+    background: #1565c0;
+}
+
+.btn-inicio:hover {
+    background: #1e88e5;
+}
+
+/* ----------------------------- */
+/*       MENÚ DESPLEGABLE        */
+/* ----------------------------- */
+
+details.menu-desplegable {
+    margin: 15px 0;
+}
+
+summary.btn {
+    list-style: none;
+}
+
+details[open] summary.btn {
+    background: #1e88e5;
+}
+
+details ul {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 10px 5px;
+    width: 260px;
+    margin: 10px auto 0;
+    animation: fadeIn 0.4s ease-in-out both;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+details ul li {
+    list-style: none;
+    margin: 8px 0;
+}
+
+details ul li a {
+    color: #e3f2fd;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+details ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03);
+}
+
+/* ----------------------------- */
+/*         ANIMACIONES           */
+/* ----------------------------- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------- */
+/*     MULTIMEDIA 1 - MAPAS      */
+/* ----------------------------- */
+
+.contenedor-mapas {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-mapa {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.8s ease-in-out both;
+}
+
+.tarjeta-mapa h2 {
+    margin-bottom: 12px;
+    color: #bbdefb;
+    text-align: center;
+}
+
+/* ----------------------------- */
+/*     MULTIMEDIA 2 - VIDEOS     */
+/* ----------------------------- */
+
+.contenedor-videos {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.video-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.8s ease-in-out both;
+    text-align: center;
+}
+
+.video-card h3 {
+    margin-bottom: 12px;
+    color: #bbdefb;
+}
+
+/* ----------------------------- */
+/*     MULTIMEDIA 3 - AUDIOS     */
+/* ----------------------------- */
+
+.titulo-seccion {
+    color: #e3f2fd;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    animation: fadeIn 0.8s ease-in-out both;
+}
+
+.contenedor-audios {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.audio-card {
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.85), rgba(44, 82, 130, 0.85));
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,30,0.35);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.8s ease-in-out both;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audio-card h3 {
+    margin-bottom: 12px;
+    color: #d4e9ff;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.audio-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.audio-card audio {
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    margin-top: auto;
+    display: block;
+}

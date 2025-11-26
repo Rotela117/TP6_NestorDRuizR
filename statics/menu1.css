@@ -1,0 +1,37 @@
+.menu-vertical {
+    width: 250px;
+    background: rgba(26, 54, 93, 0.95);
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    position: fixed;
+}
+
+.menu-vertical h2 {
+    margin-top: 0;
+    color: #bbdefb;
+    text-align: center;
+}
+
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-vertical ul li {
+    margin: 15px 0;
+}
+
+.menu-vertical ul li a {
+    color: #e3f2fd;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-vertical ul li a:hover {
+    background: #1e88e5;
+}
